@@ -1,35 +1,25 @@
-### Test workflow
+### Test workflow submission
 
 
 
-Hi, If you are viewing this, it is because you scaled through to the next round of the recruitment for the  DevOps position at Wafi. Congratulations 🎉✨.
+Hi, the task has been completed, the default temporal server port has been changed to 7233 andthe main.go with the temporal client has been updated too
 
-At Wafi, we use the microservice software architecture. The microservices approach to software development helps teams deploy faster, but it comes with some issues, one of them is data consistency. How can data change in microservice A be propagated to microservice B and C? Send it via an event?
+a few extensive files have been added, the .env file stating some universal variables, the docker-compose.yml which has all the configurations required to create and launch the container. the temporal-deployment.yaml is a kubernetes configfile stating everything required for deployment. a few security considerations were implemented. the CICD.md states my recommendations for the app's continuous integration and continuous deployment .
 
-Yes, that works but what if B updates itself and C had an hiccups and just could not make the update 🙄.
+## How would i improve the app
 
-Then that means we need to have a mechanism that allows us to handle such failures, make retries and what-else? Just how many of the situations like above do we have to write failures and retry logic for? 
-
-At Wafi, we use [Temporal](https://temporal.io) as a microservice orchestrator which helps solve the issues stated above for us.
-
-## Your task
-
-* Deploy a temporal cluster for production. Follow the deployment guide [here](https://docs.temporal.io/docs/server/production-deployment). A plus is if you are able to implement any of the security considerations stated [here](https://docs.temporal.io/docs/server/security)
-
-* Package this temporal app as a docker image
-  * write a CICD for the app.
-  * deploy the app using Kubernetes
-  * How would you improve this app?
+To improve a Temporal app, i can focus on optimizing performance, improving scalability, enhancing reliability, adding security, and enhancing the user experience. This can include using profiling tools, scaling with container orchestration, implementing retries and circuit breakers, adding authentication and authorization, using encryption, and improving the user interface and feedback.
 
 
+STEPS TO START
 
-This is required for the worker to be up
+```bash
+docker compose up
+```
 
 ```bash
 go run ./worker/main.go
 ```
-
-​	
 
 Execute the helloworkflow
 
@@ -37,11 +27,5 @@ Execute the helloworkflow
 go run ./starter/main.go
 ```
 
-
-
-Please note that the temporal server needs to be up before the above commands work
-
-
-
-See you soon 👋🏻.
+Hoping i made it to the next challent/step 👋🏻.
 
