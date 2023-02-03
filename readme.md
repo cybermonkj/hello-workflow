@@ -27,5 +27,5 @@ Execute the helloworkflow
 go run ./starter/main.go
 ```
 
-Hoping i made it to the next challent/step 👋🏻.
+Hoping i made it to the next challenge/step 👋🏻.
 
