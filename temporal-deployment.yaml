@@ -397,7 +397,7 @@ items:
               image: temporalio/ui:2.2.3
               name: temporal-ui
               ports:
-                - containerPort: 8080
+                - containerPort: 8088
               resources: {}
           restartPolicy: Always
           enableServiceLinks: false
